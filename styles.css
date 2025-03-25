@@ -1,0 +1,262 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #3c6b5a;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+.hero-content {
+    position: relative;
+}
+
+.hero-title {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
+    font-style: italic;
+    top: 250px;
+    left: 200px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+
+}
+
+.hero-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-intro h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero-intro p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.container h2 {
+    color: #2c3e50;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#about {
+    background-color: #ecf0f1;
+}
+#about p {
+    font-size: 1.2em; /* 调整自习室概况段落文字大小 */
+    line-height: 1.6;
+}
+
+.feature-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    width: 250px;
+}
+
+.feature-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-description {
+    font-size: 1.1em;
+}
+
+.space-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.space-item {
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.space-item:hover {
+    transform: translateY(-10px);
+}
+
+.space-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.space-name {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.space-description {
+    font-size: 1.1em;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#contact form button {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+#contact form button:hover {
+    background-color: #219653;
+}
+
+footer {
+    background-color: #3c6b5a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}    
+
+.space-detail {
+    padding: 0px 0; /* 减少顶部内边距，让标题更靠近导航栏 */
+}
+
+.space-detail img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.space-detail p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.space-detail h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.space-detail ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.space-detail .btn {
+    display: inline-block;
+    background-color: #428d5f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.space-detail .btn:hover {
+    background-color: #244a35;
+}
